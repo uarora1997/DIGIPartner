@@ -1,0 +1,89 @@
+body{
+  background-color: rgba(214, 211, 211, 0.137);
+}
+.container{
+  background-color: white !important; 
+}
+.col-lg-2 a {
+  background-color: transparent;
+  padding: 5px;
+  display: inline-block;
+  margin: 3px;
+  border: 1px solid grey;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+.col-lg-2 a:hover {
+  background-color: #fff;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+.myimg {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin: auto;
+}
+.info_container {
+  border: 1px solid rgba(146, 146, 146, 0.425);
+}
+#business-logo{
+  max-width: 120px;align-items: center;
+}
+.info_container h5,h4{
+  text-align: center;
+}
+.container > .row {
+  box-shadow: 0px 0px 5px 0px grey;
+}
+.c-row{
+  background-color: white !important; opacity: 1  !important;
+  width:100%; 
+}
+.details-header{
+  font-size:1.5rem;
+  margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.details-center{
+  justify-content: center; align-items: center; text-align: center;
+}
+.icon-top{
+  margin: 3px;
+}
+.icon-bottom{
+  margin: 8px; height: 24px;width: 24px;
+}
+.form-header{
+  color: rgb(73, 70, 70); text-align: center;
+}
+.text-muted{
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}
+#phone span{
+  margin-top:3px !important;
+}
+#phone{
+  color:black;
+}
+#phone-text{
+  position: relative;
+  top:-5px;
+}
+#date{
+  text-align: left;line-height: 1.7;
+}
+
+

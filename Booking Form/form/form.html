@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link href="./css/form.css" rel="stylesheet">
+   <link href="./css/formUI.css" rel="stylesheet">
+   <link href="../tag/css/tag.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+   <div class="container  pt-5 mb-5">
+      <div class="row c-row">
+         <div class="col-lg-4 p-3 pt-4 info_container">
+            <img src="./assets/team.jpg" class="d-block m-auto" id="business-logo" alt="Business Logo">
+            <img class="d-block m-auto myimg ml-lg-3"
+               src="https://www.seekpng.com/png/detail/65-653408_happy-girl-png-business-girls.png">
+            <br>
+            <hr>
+            <h5 class="text-muted">John Doe</h5>
+            <br>
+            <h4 class="mt-3 details-header"> Individual Tax Consultation</h3>
+               <p class="d-flex mt-sm-3 details-center">
+                  <span class="material-icons icon-top">schedule</span>30mins &nbsp;
+                  <a href="tel:123456789" id="phone">
+                     <span class="material-icons icon-top">phone</span><span id="phone-text">Phonecall &nbsp;</span> 
+                  </a>
+               </p>
+               <p class="d-flex mt-sm-3 details-center ">
+                  <span class="material-icons icon-top">public</span>+5:30 GMT Indian Timezone
+               </p>
+               <p class="d-flex mt-sm-3 details-center">
+                  <span class="material-icons icon-bottom">calendar_today</span>
+                  <span id="date"> 5:30 pm - 6:30 pm <br> 30th April , Friday</span>
+               </p>
+         </div>
+         <div class="col-md-12 col-lg-8 col-sm-12">
+            <h2 class="m-4 form-header"> Booking Form </h2>
+            <hr>
+            <form action="#" method="get" id="booking_form">
+               <div class="row ml-4">
+                  <div class="form-group col-5">
+                     <label for="first_name">First Name</label><br>
+                     <input class="form-control" type="text" name="first_name" id="first_name">
+                  </div>
+                  <div class="form-group col-5">
+                     <label for="last_name">Last Name</label><br>
+                     <input class="form-control" type="text" id="last_name" name="last_name">
+                  </div>
+               </div>
+               <div class="row ml-4">
+                  <div class="form-group col-10">
+                     <label for="email">Email</label><br>
+                     <!-- <input type="email" class="simple-tags" id="email" name="email" data-simple-tags=""> -->
+                     <div id="email" class="simple-tags" data-simple-tags="Enter your emails here (seperated by commas)"></div>
+                  </div>
+               </div>
+               <div class="row ml-4">
+                  <div class="form-group col-10">
+                     <label for="query">What would you like me to prepare?</label><br>
+                     <textarea id="query" name="email" cols="30" rows="5">
+            </textarea>
+
+                  </div>
+               </div>
+            </form>
+
+         </div>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <script src="../tag/js/script-min.js"></script>
+
+</body>
+
+</html>

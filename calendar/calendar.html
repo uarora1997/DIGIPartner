@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link href="css/CalenderUI.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="./css/vanilla-calendar-min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: rgba(214, 211, 211, 0.384);">
+    <div class="container  mt-5 mb-5" style="background-color: white !important; ">
+        <div class="row" style="background-color: white !important; opacity: 1  !important;" style="width:100%; height: .5vh;">
+            <div class="col-lg-4 p-3 mt-4">
+                <img src="./assets/team.jpg" class="d-block m-auto" alt="Business Logo" style="max-width: 120px;align-items: center;">
+                <img class="d-block m-auto myimg ml-lg-3" src="https://www.seekpng.com/png/detail/65-653408_happy-girl-png-business-girls.png">
+                <br>
+                <hr> <br>
+                <h4 style="text-align: center;" class="mt-3"> Individual Tax Consultation</h3>
+                    <h5 class="text-muted" style="text-align: center;"> with John Doe</h5>
+                    <p class="d-flex mt-sm-2" style="justify-content: center; align-items: center; text-align: center;">
+                        <span class="material-icons " style="margin: 3px;">schedule</span>30mins &nbsp;
+
+                        <a href="tel:+123456789" style="color: black;">
+                            <span class="material-icons" style="margin: 3px;">phone</span><span id="phone-text">Phonecall</span> </a>&nbsp;
+                    </p>
+                    <p style="text-align: center;">Are you an individual in need of personal tax prep services? We are here to help. Let's go over your tax prep needs, and get the ball rolling!
+                    </p>
+
+            </div>
+            <div class="col-lg-6 col-sm-8">
+                <div class="timezone_wrapper mt-3">
+                    <div class="form-group">
+                        <select name="timezone" id="timezone" class="form-control selectpicker p-0" data-live-search="true" data-auto="1">
+                     <option value="Etc/GMT+11" data-tokens="Etc/GMT+11">Etc/GMT+11</option>
+                     <option value="Etc/GMT+10" data-tokens="Etc/GMT+10">Etc/GMT+10</option>
+                     <option value="Etc/GMT+9" data-tokens="Etc/GMT+9">Etc/GMT+9</option>
+                     <option value="Etc/GMT+8" data-tokens="Etc/GMT+8">Etc/GMT+8</option>
+                     <option value="Etc/GMT+7" data-tokens="Etc/GMT+7">Etc/GMT+7</option>
+                     <option value="Etc/GMT+6" data-tokens="Etc/GMT+6">Etc/GMT+6</option>
+                     <option value="Etc/GMT+5" data-tokens="Etc/GMT+5">Etc/GMT+5</option>
+                     <option value="Etc/GMT+4" data-tokens="Etc/GMT+4">Etc/GMT+4</option>
+                     <option value="Etc/GMT+3" data-tokens="Etc/GMT+3">Etc/GMT+3</option>
+                     <option value="Etc/GMT+2" data-tokens="Etc/GMT+2">Etc/GMT+2</option>
+                     <option value="Etc/GMT+1" data-tokens="Etc/GMT+1">Etc/GMT+1</option>
+                     <option value="Pacific/Niue" data-tokens="Pacific/Niue (UTC-11:00)">Pacific/Niue (UTC-11:00)
+                     </option>
+                     <option value="Pacific/Pago_Pago" data-tokens="Pacific/Pago_Pago (UTC-11:00)">Pacific/Pago_Pago
+                        (UTC-11:00)</option>
+                     <option value="Pacific/Midway" data-tokens="Pacific/Midway (UTC-11:00)">Pacific/Midway (UTC-11:00)
+                     </option>
+                     <option value="Pacific/Tahiti" data-tokens="Pacific/Tahiti (UTC-10:00)">Pacific/Tahiti (UTC-10:00)
+                     </option>
+                     <option value="Pacific/Rarotonga" data-tokens="Pacific/Rarotonga (UTC-10:00)">Pacific/Rarotonga
+                        (UTC-10:00)</option>
+                     <option value="Pacific/Honolulu" data-tokens="Pacific/Honolulu (UTC-10:00)">Pacific/Honolulu
+                        (UTC-10:00)</option>
+                     <option value="Pacific/Marquesas" data-tokens="Pacific/Marquesas (UTC-09:30)">Pacific/Marquesas
+                        (UTC-09:30)</option>
+                     <option value="Pacific/Gambier" data-tokens="Pacific/Gambier (UTC-09:00)">Pacific/Gambier
+                        (UTC-09:00)</option>
+                     <option value="America/Adak" data-tokens="America/Adak (UTC-09:00)">America/Adak (UTC-09:00)
+                     </option>
+                     <option value="America/Yakutat" data-tokens="America/Yakutat (UTC-08:00)">America/Yakutat
+                        (UTC-08:00)</option>
+                     <option value="America/Juneau" data-tokens="America/Juneau (UTC-08:00)">America/Juneau (UTC-08:00)
+                     </option>
+                     <option value="America/Nome" data-tokens="America/Nome (UTC-08:00)">America/Nome (UTC-08:00)
+                     </option>
+                     <option value="America/Sitka" data-tokens="America/Sitka (UTC-08:00)">America/Sitka (UTC-08:00)
+                     </option>
+                     <option value="America/Anchorage" data-tokens="America/Anchorage (UTC-08:00)">America/Anchorage
+                        (UTC-08:00)</option>
+                     <option value="Pacific/Pitcairn" data-tokens="Pacific/Pitcairn (UTC-08:00)">Pacific/Pitcairn
+                        (UTC-08:00)</option>
+                     <option value="America/Metlakatla" data-tokens="America/Metlakatla (UTC-08:00)">America/Metlakatla
+                        (UTC-08:00)</option>
+                     <option value="America/Hermosillo" data-tokens="America/Hermosillo (UTC-07:00)">America/Hermosillo
+                        (UTC-07:00)</option>
+                     <option value="America/Whitehorse" data-tokens="America/Whitehorse (UTC-07:00)">America/Whitehorse
+                        (UTC-07:00)</option>
+                     <option value="America/Tijuana" data-tokens="America/Tijuana (UTC-07:00)">America/Tijuana
+                        (UTC-07:00)</option>
+                     <option value="America/Los_Angeles" data-tokens="America/Los_Angeles (UTC-07:00)">
+                        America/Los_Angeles (UTC-07:00)</option>
+                     <option value="America/Dawson_Creek" data-tokens="America/Dawson_Creek (UTC-07:00)">
+                        America/Dawson_Creek (UTC-07:00)</option>
+                     <option value="America/Creston" data-tokens="America/Creston (UTC-07:00)">America/Creston
+                        (UTC-07:00)</option>
+                     <option value="America/Phoenix" data-tokens="America/Phoenix (UTC-07:00)">America/Phoenix
+                        (UTC-07:00)</option>
+                     <option value="America/Dawson" data-tokens="America/Dawson (UTC-07:00)">America/Dawson (UTC-07:00)
+                     </option>
+                     <option value="America/Fort_Nelson" data-tokens="America/Fort_Nelson (UTC-07:00)">
+                        America/Fort_Nelson (UTC-07:00)</option>
+                     <option value="America/Vancouver" data-tokens="America/Vancouver (UTC-07:00)">America/Vancouver
+                        (UTC-07:00)</option>
+                     <option value="America/Regina" data-tokens="America/Regina (UTC-06:00)">America/Regina (UTC-06:00)
+                     </option>
+                     <option value="America/Mazatlan" data-tokens="America/Mazatlan (UTC-06:00)">America/Mazatlan
+                        (UTC-06:00)</option>
+                     <option value="America/Edmonton" data-tokens="America/Edmonton (UTC-06:00)">America/Edmonton
+                        (UTC-06:00)</option>
+                     <option value="America/Inuvik" data-tokens="America/Inuvik (UTC-06:00)">America/Inuvik (UTC-06:00)
+                     </option>
+                     <option value="America/Belize" data-tokens="America/Belize (UTC-06:00)">America/Belize (UTC-06:00)
+                     </option>
+                     <option value="America/Boise" data-tokens="America/Boise (UTC-06:00)">America/Boise (UTC-06:00)
+                     </option>
+                     <option value="America/Cambridge_Bay" data-tokens="America/Cambridge_Bay (UTC-06:00)">
+                        America/Cambridge_Bay (UTC-06:00)</option>
+                     <option value="America/Guatemala" data-tokens="America/Guatemala (UTC-06:00)">America/Guatemala
+                        (UTC-06:00)</option>
+                     <option value="America/Costa_Rica" data-tokens="America/Costa_Rica (UTC-06:00)">America/Costa_Rica
+                        (UTC-06:00)</option>
+                     <option value="America/Denver" data-tokens="America/Denver (UTC-06:00)">America/Denver (UTC-06:00)
+                     </option>
+                     <option value="America/El_Salvador" data-tokens="America/El_Salvador (UTC-06:00)">
+                        America/El_Salvador (UTC-06:00)</option>
+                     <option value="America/Chihuahua" data-tokens="America/Chihuahua (UTC-06:00)">America/Chihuahua
+                        (UTC-06:00)</option>
+                     <option value="America/Managua" data-tokens="America/Managua (UTC-06:00)">America/Managua
+                        (UTC-06:00)</option>
+                     <option value="America/Swift_Current" data-tokens="America/Swift_Current (UTC-06:00)">
+                        America/Swift_Current (UTC-06:00)</option>
+                     <option value="America/Yellowknife" data-tokens="America/Yellowknife (UTC-06:00)">
+                        America/Yellowknife (UTC-06:00)</option>
+                     <option value="Pacific/Galapagos" data-tokens="Pacific/Galapagos (UTC-06:00)">Pacific/Galapagos
+                        (UTC-06:00)</option>
+                     <option value="Pacific/Easter" data-tokens="Pacific/Easter (UTC-06:00)">Pacific/Easter (UTC-06:00)
+                     </option>
+                     <option value="America/Tegucigalpa" data-tokens="America/Tegucigalpa (UTC-06:00)">
+                        America/Tegucigalpa (UTC-06:00)</option>
+                     <option value="America/Ojinaga" data-tokens="America/Ojinaga (UTC-06:00)">America/Ojinaga
+                        (UTC-06:00)</option>
+                     <option value="America/Merida" data-tokens="America/Merida (UTC-05:00)">America/Merida (UTC-05:00)
+                     </option>
+                     <option value="America/Chicago" data-tokens="America/Chicago (UTC-05:00)">America/Chicago
+                        (UTC-05:00)</option>
+                     <option value="America/Cayman" data-tokens="America/Cayman (UTC-05:00)">America/Cayman (UTC-05:00)
+                     </option>
+                     <option value="America/North_Dakota/New_Salem"
+                        data-tokens="America/North_Dakota/New_Salem (UTC-05:00)">America/North_Dakota/New_Salem
+                        (UTC-05:00)</option>
+                     <option value="America/Cancun" data-tokens="America/Cancun (UTC-05:00)">America/Cancun (UTC-05:00)
+                     </option>
+                     <option value="America/Guayaquil" data-tokens="America/Guayaquil (UTC-05:00)">America/Guayaquil
+                        (UTC-05:00)</option>
+                     <option value="America/Indiana/Tell_City" data-tokens="America/Indiana/Tell_City (UTC-05:00)">
+                        America/Indiana/Tell_City (UTC-05:00)</option>
+                     <option value="America/Menominee" data-tokens="America/Menominee (UTC-05:00)">America/Menominee
+                        (UTC-05:00)</option>
+                     <option value="America/Atikokan" data-tokens="America/Atikokan (UTC-05:00)">America/Atikokan
+                        (UTC-05:00)</option>
+                     <option value="America/Indiana/Knox" data-tokens="America/Indiana/Knox (UTC-05:00)">
+                        America/Indiana/Knox (UTC-05:00)</option>
+                     <option value="America/Bahia_Banderas" data-tokens="America/Bahia_Banderas (UTC-05:00)">
+                        America/Bahia_Banderas (UTC-05:00)</option>
+                     <option value="America/North_Dakota/Center" data-tokens="America/North_Dakota/Center (UTC-05:00)">
+                        America/North_Dakota/Center (UTC-05:00)</option>
+                     <option value="America/Winnipeg" data-tokens="America/Winnipeg (UTC-05:00)">America/Winnipeg
+                        (UTC-05:00)</option>
+                     <option value="America/Jamaica" data-tokens="America/Jamaica (UTC-05:00)">America/Jamaica
+                        (UTC-05:00)</option>
+                     <option value="America/North_Dakota/Beulah" data-tokens="America/North_Dakota/Beulah (UTC-05:00)">
+                        America/North_Dakota/Beulah (UTC-05:00)</option>
+                     <option value="America/Panama" data-tokens="America/Panama (UTC-05:00)">America/Panama (UTC-05:00)
+                     </option>
+                     <option value="America/Rankin_Inlet" data-tokens="America/Rankin_Inlet (UTC-05:00)">
+                        America/Rankin_Inlet (UTC-05:00)</option>
+                     <option value="America/Mexico_City" data-tokens="America/Mexico_City (UTC-05:00)">
+                        America/Mexico_City (UTC-05:00)</option>
+                     <option value="America/Monterrey" data-tokens="America/Monterrey (UTC-05:00)">America/Monterrey
+                        (UTC-05:00)</option>
+                     <option value="America/Matamoros" data-tokens="America/Matamoros (UTC-05:00)">America/Matamoros
+                        (UTC-05:00)</option>
+                     <option value="America/Rio_Branco" data-tokens="America/Rio_Branco (UTC-05:00)">America/Rio_Branco
+                        (UTC-05:00)</option>
+                     <option value="America/Resolute" data-tokens="America/Resolute (UTC-05:00)">America/Resolute
+                        (UTC-05:00)</option>
+                     <option value="America/Eirunepe" data-tokens="America/Eirunepe (UTC-05:00)">America/Eirunepe
+                        (UTC-05:00)</option>
+                     <option value="America/Lima" data-tokens="America/Lima (UTC-05:00)">America/Lima (UTC-05:00)
+                     </option>
+                     <option value="America/Rainy_River" data-tokens="America/Rainy_River (UTC-05:00)">
+                        America/Rainy_River (UTC-05:00)</option>
+                     <option value="America/Bogota" data-tokens="America/Bogota (UTC-05:00)">America/Bogota (UTC-05:00)
+                     </option>
+                     <option value="America/Port-au-Prince" data-tokens="America/Port-au-Prince (UTC-04:00)">
+                        America/Port-au-Prince (UTC-04:00)</option>
+                     <option value="America/Pangnirtung" data-tokens="America/Pangnirtung (UTC-04:00)">
+                        America/Pangnirtung (UTC-04:00)</option>
+                     <option value="America/Port_of_Spain" data-tokens="America/Port_of_Spain (UTC-04:00)">
+                        America/Port_of_Spain (UTC-04:00)</option>
+                     <option value="America/Guadeloupe" data-tokens="America/Guadeloupe (UTC-04:00)">America/Guadeloupe
+                        (UTC-04:00)</option>
+                     <option value="America/Porto_Velho" data-tokens="America/Porto_Velho (UTC-04:00)">
+                        America/Porto_Velho (UTC-04:00)</option>
+                     <option value="America/Grand_Turk" data-tokens="America/Grand_Turk (UTC-04:00)">America/Grand_Turk
+                        (UTC-04:00)</option>
+                     <option value="America/Grenada" data-tokens="America/Grenada (UTC-04:00)">America/Grenada
+                        (UTC-04:00)</option>
+                     <option value="America/Indiana/Petersburg" data-tokens="America/Indiana/Petersburg (UTC-04:00)">
+                        America/Indiana/Petersburg (UTC-04:00)</option>
+                     <option value="America/Guyana" data-tokens="America/Guyana (UTC-04:00)">America/Guyana (UTC-04:00)
+                     </option>
+                     <option value="America/Kentucky/Monticello" data-tokens="America/Kentucky/Monticello (UTC-04:00)">
+                        America/Kentucky/Monticello (UTC-04:00)</option>
+                     <option value="America/Martinique" data-tokens="America/Martinique (UTC-04:00)">America/Martinique
+                        (UTC-04:00)</option>
+                     <option value="America/Marigot" data-tokens="America/Marigot (UTC-04:00)">America/Marigot
+                        (UTC-04:00)</option>
+                     <option value="America/Manaus" data-tokens="America/Manaus (UTC-04:00)">America/Manaus (UTC-04:00)
+                     </option>
+                     <option value="America/Montserrat" data-tokens="America/Montserrat (UTC-04:00)">America/Montserrat
+                        (UTC-04:00)</option>
+                     <option value="America/Lower_Princes" data-tokens="America/Lower_Princes (UTC-04:00)">
+                        America/Lower_Princes (UTC-04:00)</option>
+                     <option value="America/Nassau" data-tokens="America/Nassau (UTC-04:00)">America/Nassau (UTC-04:00)
+                     </option>
+                     <option value="America/La_Paz" data-tokens="America/La_Paz (UTC-04:00)">America/La_Paz (UTC-04:00)
+                     </option>
+                     <option value="America/Kralendijk" data-tokens="America/Kralendijk (UTC-04:00)">America/Kralendijk
+                        (UTC-04:00)</option>
+                     <option value="America/Kentucky/Louisville" data-tokens="America/Kentucky/Louisville (UTC-04:00)">
+                        America/Kentucky/Louisville (UTC-04:00)</option>
+                     <option value="America/Havana" data-tokens="America/Havana (UTC-04:00)">America/Havana (UTC-04:00)
+                     </option>
+                     <option value="America/New_York" data-tokens="America/New_York (UTC-04:00)">America/New_York
+                        (UTC-04:00)</option>
+                     <option value="America/Iqaluit" data-tokens="America/Iqaluit (UTC-04:00)">America/Iqaluit
+                        (UTC-04:00)</option>
+                     <option value="America/Nipigon" data-tokens="America/Nipigon (UTC-04:00)">America/Nipigon
+                        (UTC-04:00)</option>
+                     <option value="America/Indiana/Winamac" data-tokens="America/Indiana/Winamac (UTC-04:00)">
+                        America/Indiana/Winamac (UTC-04:00)</option>
+                     <option value="America/Indiana/Vincennes" data-tokens="America/Indiana/Vincennes (UTC-04:00)">
+                        America/Indiana/Vincennes (UTC-04:00)</option>
+                     <option value="America/Indiana/Vevay" data-tokens="America/Indiana/Vevay (UTC-04:00)">
+                        America/Indiana/Vevay (UTC-04:00)</option>
+                     <option value="America/Indiana/Marengo" data-tokens="America/Indiana/Marengo (UTC-04:00)">
+                        America/Indiana/Marengo (UTC-04:00)</option>
+                     <option value="America/Indiana/Indianapolis"
+                        data-tokens="America/Indiana/Indianapolis (UTC-04:00)">America/Indiana/Indianapolis (UTC-04:00)
+                     </option>
+                     <option value="America/Puerto_Rico" data-tokens="America/Puerto_Rico (UTC-04:00)">
+                        America/Puerto_Rico (UTC-04:00)</option>
+                     <option value="America/Caracas" data-tokens="America/Caracas (UTC-04:00)">America/Caracas
+                        (UTC-04:00)</option>
+                     <option value="America/Dominica" data-tokens="America/Dominica (UTC-04:00)">America/Dominica
+                        (UTC-04:00)</option>
+                     <option value="America/Barbados" data-tokens="America/Barbados (UTC-04:00)">America/Barbados
+                        (UTC-04:00)</option>
+                     <option value="America/Antigua" data-tokens="America/Antigua (UTC-04:00)">America/Antigua
+                        (UTC-04:00)</option>
+                     <option value="America/Santiago" data-tokens="America/Santiago (UTC-04:00)">America/Santiago
+                        (UTC-04:00)</option>
+                     <option value="America/Santo_Domingo" data-tokens="America/Santo_Domingo (UTC-04:00)">
+                        America/Santo_Domingo (UTC-04:00)</option>
+                     <option value="America/St_Barthelemy" data-tokens="America/St_Barthelemy (UTC-04:00)">
+                        America/St_Barthelemy (UTC-04:00)</option>
+                     <option value="America/St_Kitts" data-tokens="America/St_Kitts (UTC-04:00)">America/St_Kitts
+                        (UTC-04:00)</option>
+                     <option value="America/St_Lucia" data-tokens="America/St_Lucia (UTC-04:00)">America/St_Lucia
+                        (UTC-04:00)</option>
+                     <option value="America/St_Thomas" data-tokens="America/St_Thomas (UTC-04:00)">America/St_Thomas
+                        (UTC-04:00)</option>
+                     <option value="America/St_Vincent" data-tokens="America/St_Vincent (UTC-04:00)">America/St_Vincent
+                        (UTC-04:00)</option>
+                     <option value="America/Aruba" data-tokens="America/Aruba (UTC-04:00)">America/Aruba (UTC-04:00)
+                     </option>
+                     <option value="America/Detroit" data-tokens="America/Detroit (UTC-04:00)">America/Detroit
+                        (UTC-04:00)</option>
+                     <option value="America/Thunder_Bay" data-tokens="America/Thunder_Bay (UTC-04:00)">
+                        America/Thunder_Bay (UTC-04:00)</option>
+                     <option value="America/Asuncion" data-tokens="America/Asuncion (UTC-04:00)">America/Asuncion
+                        (UTC-04:00)</option>
+                     <option value="America/Toronto" data-tokens="America/Toronto (UTC-04:00)">America/Toronto
+                        (UTC-04:00)</option>
+                     <option value="America/Blanc-Sablon" data-tokens="America/Blanc-Sablon (UTC-04:00)">
+                        America/Blanc-Sablon (UTC-04:00)</option>
+                     <option value="America/Curacao" data-tokens="America/Curacao (UTC-04:00)">America/Curacao
+                        (UTC-04:00)</option>
+                     <option value="America/Cuiaba" data-tokens="America/Cuiaba (UTC-04:00)">America/Cuiaba (UTC-04:00)
+                     </option>
+                     <option value="America/Anguilla" data-tokens="America/Anguilla (UTC-04:00)">America/Anguilla
+                        (UTC-04:00)</option>
+                     <option value="America/Campo_Grande" data-tokens="America/Campo_Grande (UTC-04:00)">
+                        America/Campo_Grande (UTC-04:00)</option>
+                     <option value="America/Boa_Vista" data-tokens="America/Boa_Vista (UTC-04:00)">America/Boa_Vista
+                        (UTC-04:00)</option>
+                     <option value="America/Tortola" data-tokens="America/Tortola (UTC-04:00)">America/Tortola
+                        (UTC-04:00)</option>
+                     <option value="America/Montevideo" data-tokens="America/Montevideo (UTC-03:00)">America/Montevideo
+                        (UTC-03:00)</option>
+                     <option value="Antarctica/Palmer" data-tokens="Antarctica/Palmer (UTC-03:00)">Antarctica/Palmer
+                        (UTC-03:00)</option>
+                     <option value="America/Moncton" data-tokens="America/Moncton (UTC-03:00)">America/Moncton
+                        (UTC-03:00)</option>
+                     <option value="America/Thule" data-tokens="America/Thule (UTC-03:00)">America/Thule (UTC-03:00)
+                     </option>
+                     <option value="America/Sao_Paulo" data-tokens="America/Sao_Paulo (UTC-03:00)">America/Sao_Paulo
+                        (UTC-03:00)</option>
+                     <option value="Atlantic/Bermuda" data-tokens="Atlantic/Bermuda (UTC-03:00)">Atlantic/Bermuda
+                        (UTC-03:00)</option>
+                     <option value="America/Paramaribo" data-tokens="America/Paramaribo (UTC-03:00)">America/Paramaribo
+                        (UTC-03:00)</option>
+                     <option value="America/Santarem" data-tokens="America/Santarem (UTC-03:00)">America/Santarem
+                        (UTC-03:00)</option>
+                     <option value="America/Recife" data-tokens="America/Recife (UTC-03:00)">America/Recife (UTC-03:00)
+                     </option>
+                     <option value="Atlantic/Stanley" data-tokens="Atlantic/Stanley (UTC-03:00)">Atlantic/Stanley
+                        (UTC-03:00)</option>
+                     <option value="Antarctica/Rothera" data-tokens="Antarctica/Rothera (UTC-03:00)">Antarctica/Rothera
+                        (UTC-03:00)</option>
+                     <option value="America/Maceio" data-tokens="America/Maceio (UTC-03:00)">America/Maceio (UTC-03:00)
+                     </option>
+                     <option value="America/Araguaina" data-tokens="America/Araguaina (UTC-03:00)">America/Araguaina
+                        (UTC-03:00)</option>
+                     <option value="America/Argentina/San_Luis" data-tokens="America/Argentina/San_Luis (UTC-03:00)">
+                        America/Argentina/San_Luis (UTC-03:00)</option>
+                     <option value="America/Fortaleza" data-tokens="America/Fortaleza (UTC-03:00)">America/Fortaleza
+                        (UTC-03:00)</option>
+                     <option value="America/Glace_Bay" data-tokens="America/Glace_Bay (UTC-03:00)">America/Glace_Bay
+                        (UTC-03:00)</option>
+                     <option value="America/Goose_Bay" data-tokens="America/Goose_Bay (UTC-03:00)">America/Goose_Bay
+                        (UTC-03:00)</option>
+                     <option value="America/Cayenne" data-tokens="America/Cayenne (UTC-03:00)">America/Cayenne
+                        (UTC-03:00)</option>
+                     <option value="America/Punta_Arenas" data-tokens="America/Punta_Arenas (UTC-03:00)">
+                        America/Punta_Arenas (UTC-03:00)</option>
+                     <option value="America/Halifax" data-tokens="America/Halifax (UTC-03:00)">America/Halifax
+                        (UTC-03:00)</option>
+                     <option value="America/Belem" data-tokens="America/Belem (UTC-03:00)">America/Belem (UTC-03:00)
+                     </option>
+                     <option value="America/Argentina/Buenos_Aires"
+                        data-tokens="America/Argentina/Buenos_Aires (UTC-03:00)">America/Argentina/Buenos_Aires
+                        (UTC-03:00)</option>
+                     <option value="America/Argentina/Ushuaia" data-tokens="America/Argentina/Ushuaia (UTC-03:00)">
+                        America/Argentina/Ushuaia (UTC-03:00)</option>
+                     <option value="America/Argentina/Tucuman" data-tokens="America/Argentina/Tucuman (UTC-03:00)">
+                        America/Argentina/Tucuman (UTC-03:00)</option>
+                     <option value="America/Bahia" data-tokens="America/Bahia (UTC-03:00)">America/Bahia (UTC-03:00)
+                     </option>
+                     <option value="America/Argentina/San_Juan" data-tokens="America/Argentina/San_Juan (UTC-03:00)">
+                        America/Argentina/San_Juan (UTC-03:00)</option>
+                     <option value="America/Argentina/Salta" data-tokens="America/Argentina/Salta (UTC-03:00)">
+                        America/Argentina/Salta (UTC-03:00)</option>
+                     <option value="America/Argentina/Catamarca" data-tokens="America/Argentina/Catamarca (UTC-03:00)">
+                        America/Argentina/Catamarca (UTC-03:00)</option>
+                     <option value="America/Argentina/Rio_Gallegos"
+                        data-tokens="America/Argentina/Rio_Gallegos (UTC-03:00)">America/Argentina/Rio_Gallegos
+                        (UTC-03:00)</option>
+                     <option value="America/Argentina/Mendoza" data-tokens="America/Argentina/Mendoza (UTC-03:00)">
+                        America/Argentina/Mendoza (UTC-03:00)</option>
+                     <option value="America/Argentina/La_Rioja" data-tokens="America/Argentina/La_Rioja (UTC-03:00)">
+                        America/Argentina/La_Rioja (UTC-03:00)</option>
+                     <option value="America/Argentina/Cordoba" data-tokens="America/Argentina/Cordoba (UTC-03:00)">
+                        America/Argentina/Cordoba (UTC-03:00)</option>
+                     <option value="America/Argentina/Jujuy" data-tokens="America/Argentina/Jujuy (UTC-03:00)">
+                        America/Argentina/Jujuy (UTC-03:00)</option>
+                     <option value="America/St_Johns" data-tokens="America/St_Johns (UTC-02:30)">America/St_Johns
+                        (UTC-02:30)</option>
+                     <option value="Atlantic/South_Georgia" data-tokens="Atlantic/South_Georgia (UTC-02:00)">
+                        Atlantic/South_Georgia (UTC-02:00)</option>
+                     <option value="America/Nuuk" data-tokens="America/Nuuk (UTC-02:00)">America/Nuuk (UTC-02:00)
+                     </option>
+                     <option value="America/Noronha" data-tokens="America/Noronha (UTC-02:00)">America/Noronha
+                        (UTC-02:00)</option>
+                     <option value="America/Miquelon" data-tokens="America/Miquelon (UTC-02:00)">America/Miquelon
+                        (UTC-02:00)</option>
+                     <option value="Atlantic/Cape_Verde" data-tokens="Atlantic/Cape_Verde (UTC-01:00)">
+                        Atlantic/Cape_Verde (UTC-01:00)</option>
+                     <option value="Atlantic/Azores" data-tokens="Atlantic/Azores (UTC+00:00)">Atlantic/Azores
+                        (UTC+00:00)</option>
+                     <option value="Africa/Accra" data-tokens="Africa/Accra (UTC+00:00)">Africa/Accra (UTC+00:00)
+                     </option>
+                     <option value="America/Scoresbysund" data-tokens="America/Scoresbysund (UTC+00:00)">
+                        America/Scoresbysund (UTC+00:00)</option>
+                     <option value="Atlantic/Reykjavik" data-tokens="Atlantic/Reykjavik (UTC+00:00)">Atlantic/Reykjavik
+                        (UTC+00:00)</option>
+                     <option value="Atlantic/St_Helena" data-tokens="Atlantic/St_Helena (UTC+00:00)">Atlantic/St_Helena
+                        (UTC+00:00)</option>
+                     <option value="Africa/Abidjan" data-tokens="Africa/Abidjan (UTC+00:00)">Africa/Abidjan (UTC+00:00)
+                     </option>
+                     <option value="UTC" data-tokens="UTC (UTC+00:00)">UTC (UTC+00:00)</option>
+                     <option value="America/Danmarkshavn" data-tokens="America/Danmarkshavn (UTC+00:00)">
+                        America/Danmarkshavn (UTC+00:00)</option>
+                     <option value="Africa/Monrovia" data-tokens="Africa/Monrovia (UTC+00:00)">Africa/Monrovia
+                        (UTC+00:00)</option>
+                     <option value="Africa/Conakry" data-tokens="Africa/Conakry (UTC+00:00)">Africa/Conakry (UTC+00:00)
+                     </option>
+                     <option value="Africa/Freetown" data-tokens="Africa/Freetown (UTC+00:00)">Africa/Freetown
+                        (UTC+00:00)</option>
+                     <option value="Africa/Bissau" data-tokens="Africa/Bissau (UTC+00:00)">Africa/Bissau (UTC+00:00)
+                     </option>
+                     <option value="Africa/Banjul" data-tokens="Africa/Banjul (UTC+00:00)">Africa/Banjul (UTC+00:00)
+                     </option>
+                     <option value="Africa/Bamako" data-tokens="Africa/Bamako (UTC+00:00)">Africa/Bamako (UTC+00:00)
+                     </option>
+                     <option value="Africa/Lome" data-tokens="Africa/Lome (UTC+00:00)">Africa/Lome (UTC+00:00)</option>
+                     <option value="Africa/Dakar" data-tokens="Africa/Dakar (UTC+00:00)">Africa/Dakar (UTC+00:00)
+                     </option>
+                     <option value="Africa/Ouagadougou" data-tokens="Africa/Ouagadougou (UTC+00:00)">Africa/Ouagadougou
+                        (UTC+00:00)</option>
+                     <option value="Africa/Sao_Tome" data-tokens="Africa/Sao_Tome (UTC+00:00)">Africa/Sao_Tome
+                        (UTC+00:00)</option>
+                     <option value="Africa/Nouakchott" data-tokens="Africa/Nouakchott (UTC+00:00)">Africa/Nouakchott
+                        (UTC+00:00)</option>
+                     <option value="Africa/Ndjamena" data-tokens="Africa/Ndjamena (UTC+01:00)">Africa/Ndjamena
+                        (UTC+01:00)</option>
+                     <option value="Africa/Porto-Novo" data-tokens="Africa/Porto-Novo (UTC+01:00)">Africa/Porto-Novo
+                        (UTC+01:00)</option>
+                     <option value="Africa/Brazzaville" data-tokens="Africa/Brazzaville (UTC+01:00)">Africa/Brazzaville
+                        (UTC+01:00)</option>
+                     <option value="Atlantic/Faroe" data-tokens="Atlantic/Faroe (UTC+01:00)">Atlantic/Faroe (UTC+01:00)
+                     </option>
+                     <option value="Africa/El_Aaiun" data-tokens="Africa/El_Aaiun (UTC+01:00)">Africa/El_Aaiun
+                        (UTC+01:00)</option>
+                     <option value="Atlantic/Madeira" data-tokens="Atlantic/Madeira (UTC+01:00)">Atlantic/Madeira
+                        (UTC+01:00)</option>
+                     <option value="Atlantic/Canary" data-tokens="Atlantic/Canary (UTC+01:00)">Atlantic/Canary
+                        (UTC+01:00)</option>
+                     <option value="Africa/Tunis" data-tokens="Africa/Tunis (UTC+01:00)">Africa/Tunis (UTC+01:00)
+                     </option>
+                     <option value="Africa/Casablanca" data-tokens="Africa/Casablanca (UTC+01:00)">Africa/Casablanca
+                        (UTC+01:00)</option>
+                     <option value="Africa/Douala" data-tokens="Africa/Douala (UTC+01:00)">Africa/Douala (UTC+01:00)
+                     </option>
+                     <option value="Europe/London" data-tokens="Europe/London (UTC+01:00)">Europe/London (UTC+01:00)
+                     </option>
+                     <option value="Europe/Lisbon" data-tokens="Europe/Lisbon (UTC+01:00)">Europe/Lisbon (UTC+01:00)
+                     </option>
+                     <option value="Europe/Jersey" data-tokens="Europe/Jersey (UTC+01:00)">Europe/Jersey (UTC+01:00)
+                     </option>
+                     <option value="Europe/Isle_of_Man" data-tokens="Europe/Isle_of_Man (UTC+01:00)">Europe/Isle_of_Man
+                        (UTC+01:00)</option>
+                     <option value="Europe/Guernsey" data-tokens="Europe/Guernsey (UTC+01:00)">Europe/Guernsey
+                        (UTC+01:00)</option>
+                     <option value="Africa/Bangui" data-tokens="Africa/Bangui (UTC+01:00)">Africa/Bangui (UTC+01:00)
+                     </option>
+                     <option value="Europe/Dublin" data-tokens="Europe/Dublin (UTC+01:00)">Europe/Dublin (UTC+01:00)
+                     </option>
+                     <option value="Africa/Libreville" data-tokens="Africa/Libreville (UTC+01:00)">Africa/Libreville
+                        (UTC+01:00)</option>
+                     <option value="Africa/Niamey" data-tokens="Africa/Niamey (UTC+01:00)">Africa/Niamey (UTC+01:00)
+                     </option>
+                     <option value="Africa/Algiers" data-tokens="Africa/Algiers (UTC+01:00)">Africa/Algiers (UTC+01:00)
+                     </option>
+                     <option value="Africa/Lagos" data-tokens="Africa/Lagos (UTC+01:00)">Africa/Lagos (UTC+01:00)
+                     </option>
+                     <option value="Africa/Kinshasa" data-tokens="Africa/Kinshasa (UTC+01:00)">Africa/Kinshasa
+                        (UTC+01:00)</option>
+                     <option value="Africa/Malabo" data-tokens="Africa/Malabo (UTC+01:00)">Africa/Malabo (UTC+01:00)
+                     </option>
+                     <option value="Africa/Luanda" data-tokens="Africa/Luanda (UTC+01:00)">Africa/Luanda (UTC+01:00)
+                     </option>
+                     <option value="Europe/Berlin" data-tokens="Europe/Berlin (UTC+02:00)">Europe/Berlin (UTC+02:00)
+                     </option>
+                     <option value="Europe/Bratislava" data-tokens="Europe/Bratislava (UTC+02:00)">Europe/Bratislava
+                        (UTC+02:00)</option>
+                     <option value="Europe/Monaco" data-tokens="Europe/Monaco (UTC+02:00)">Europe/Monaco (UTC+02:00)
+                     </option>
+                     <option value="Europe/Podgorica" data-tokens="Europe/Podgorica (UTC+02:00)">Europe/Podgorica
+                        (UTC+02:00)</option>
+                     <option value="Europe/Oslo" data-tokens="Europe/Oslo (UTC+02:00)">Europe/Oslo (UTC+02:00)</option>
+                     <option value="Europe/Paris" data-tokens="Europe/Paris (UTC+02:00)">Europe/Paris (UTC+02:00)
+                     </option>
+                     <option value="Europe/Prague" data-tokens="Europe/Prague (UTC+02:00)">Europe/Prague (UTC+02:00)
+                     </option>
+                     <option value="Europe/Belgrade" data-tokens="Europe/Belgrade (UTC+02:00)">Europe/Belgrade
+                        (UTC+02:00)</option>
+                     <option value="Europe/Rome" data-tokens="Europe/Rome (UTC+02:00)">Europe/Rome (UTC+02:00)</option>
+                     <option value="Europe/Brussels" data-tokens="Europe/Brussels (UTC+02:00)">Europe/Brussels
+                        (UTC+02:00)</option>
+                     <option value="Africa/Harare" data-tokens="Africa/Harare (UTC+02:00)">Africa/Harare (UTC+02:00)
+                     </option>
+                     <option value="Europe/Malta" data-tokens="Europe/Malta (UTC+02:00)">Europe/Malta (UTC+02:00)
+                     </option>
+                     <option value="Europe/Madrid" data-tokens="Europe/Madrid (UTC+02:00)">Europe/Madrid (UTC+02:00)
+                     </option>
+                     <option value="Europe/Sarajevo" data-tokens="Europe/Sarajevo (UTC+02:00)">Europe/Sarajevo
+                        (UTC+02:00)</option>
+                     <option value="Europe/Luxembourg" data-tokens="Europe/Luxembourg (UTC+02:00)">Europe/Luxembourg
+                        (UTC+02:00)</option>
+                     <option value="Africa/Maputo" data-tokens="Africa/Maputo (UTC+02:00)">Africa/Maputo (UTC+02:00)
+                     </option>
+                     <option value="Europe/Ljubljana" data-tokens="Europe/Ljubljana (UTC+02:00)">Europe/Ljubljana
+                        (UTC+02:00)</option>
+                     <option value="Africa/Maseru" data-tokens="Africa/Maseru (UTC+02:00)">Africa/Maseru (UTC+02:00)
+                     </option>
+                     <option value="Europe/Budapest" data-tokens="Europe/Budapest (UTC+02:00)">Europe/Budapest
+                        (UTC+02:00)</option>
+                     <option value="Europe/Kaliningrad" data-tokens="Europe/Kaliningrad (UTC+02:00)">Europe/Kaliningrad
+                        (UTC+02:00)</option>
+                     <option value="Africa/Mbabane" data-tokens="Africa/Mbabane (UTC+02:00)">Africa/Mbabane (UTC+02:00)
+                     </option>
+                     <option value="Europe/Busingen" data-tokens="Europe/Busingen (UTC+02:00)">Europe/Busingen
+                        (UTC+02:00)</option>
+                     <option value="Europe/Gibraltar" data-tokens="Europe/Gibraltar (UTC+02:00)">Europe/Gibraltar
+                        (UTC+02:00)</option>
+                     <option value="Europe/San_Marino" data-tokens="Europe/San_Marino (UTC+02:00)">Europe/San_Marino
+                        (UTC+02:00)</option>
+                     <option value="Europe/Andorra" data-tokens="Europe/Andorra (UTC+02:00)">Europe/Andorra (UTC+02:00)
+                     </option>
+                     <option value="Europe/Warsaw" data-tokens="Europe/Warsaw (UTC+02:00)">Europe/Warsaw (UTC+02:00)
+                     </option>
+                     <option value="Europe/Skopje" data-tokens="Europe/Skopje (UTC+02:00)">Europe/Skopje (UTC+02:00)
+                     </option>
+                     <option value="Africa/Juba" data-tokens="Africa/Juba (UTC+02:00)">Africa/Juba (UTC+02:00)</option>
+                     <option value="Africa/Windhoek" data-tokens="Africa/Windhoek (UTC+02:00)">Africa/Windhoek
+                        (UTC+02:00)</option>
+                     <option value="Africa/Khartoum" data-tokens="Africa/Khartoum (UTC+02:00)">Africa/Khartoum
+                        (UTC+02:00)</option>
+                     <option value="Africa/Blantyre" data-tokens="Africa/Blantyre (UTC+02:00)">Africa/Blantyre
+                        (UTC+02:00)</option>
+                     <option value="Africa/Kigali" data-tokens="Africa/Kigali (UTC+02:00)">Africa/Kigali (UTC+02:00)
+                     </option>
+                     <option value="Africa/Gaborone" data-tokens="Africa/Gaborone (UTC+02:00)">Africa/Gaborone
+                        (UTC+02:00)</option>
+                     <option value="Africa/Tripoli" data-tokens="Africa/Tripoli (UTC+02:00)">Africa/Tripoli (UTC+02:00)
+                     </option>
+                     <option value="Africa/Bujumbura" data-tokens="Africa/Bujumbura (UTC+02:00)">Africa/Bujumbura
+                        (UTC+02:00)</option>
+                     <option value="Antarctica/Troll" data-tokens="Antarctica/Troll (UTC+02:00)">Antarctica/Troll
+                        (UTC+02:00)</option>
+                     <option value="Africa/Cairo" data-tokens="Africa/Cairo (UTC+02:00)">Africa/Cairo (UTC+02:00)
+                     </option>
+                     <option value="Arctic/Longyearbyen" data-tokens="Arctic/Longyearbyen (UTC+02:00)">
+                        Arctic/Longyearbyen (UTC+02:00)</option>
+                     <option value="Europe/Copenhagen" data-tokens="Europe/Copenhagen (UTC+02:00)">Europe/Copenhagen
+                        (UTC+02:00)</option>
+                     <option value="Europe/Zurich" data-tokens="Europe/Zurich (UTC+02:00)">Europe/Zurich (UTC+02:00)
+                     </option>
+                     <option value="Europe/Zagreb" data-tokens="Europe/Zagreb (UTC+02:00)">Europe/Zagreb (UTC+02:00)
+                     </option>
+                     <option value="Africa/Lubumbashi" data-tokens="Africa/Lubumbashi (UTC+02:00)">Africa/Lubumbashi
+                        (UTC+02:00)</option>
+                     <option value="Africa/Ceuta" data-tokens="Africa/Ceuta (UTC+02:00)">Africa/Ceuta (UTC+02:00)
+                     </option>
+                     <option value="Africa/Lusaka" data-tokens="Africa/Lusaka (UTC+02:00)">Africa/Lusaka (UTC+02:00)
+                     </option>
+                     <option value="Europe/Vienna" data-tokens="Europe/Vienna (UTC+02:00)">Europe/Vienna (UTC+02:00)
+                     </option>
+                     <option value="Europe/Vatican" data-tokens="Europe/Vatican (UTC+02:00)">Europe/Vatican (UTC+02:00)
+                     </option>
+                     <option value="Europe/Vaduz" data-tokens="Europe/Vaduz (UTC+02:00)">Europe/Vaduz (UTC+02:00)
+                     </option>
+                     <option value="Europe/Tirane" data-tokens="Europe/Tirane (UTC+02:00)">Europe/Tirane (UTC+02:00)
+                     </option>
+                     <option value="Europe/Amsterdam" data-tokens="Europe/Amsterdam (UTC+02:00)">Europe/Amsterdam
+                        (UTC+02:00)</option>
+                     <option value="Europe/Stockholm" data-tokens="Europe/Stockholm (UTC+02:00)">Europe/Stockholm
+                        (UTC+02:00)</option>
+                     <option value="Africa/Johannesburg" data-tokens="Africa/Johannesburg (UTC+02:00)">
+                        Africa/Johannesburg (UTC+02:00)</option>
+                     <option value="Europe/Bucharest" data-tokens="Europe/Bucharest (UTC+03:00)">Europe/Bucharest
+                        (UTC+03:00)</option>
+                     <option value="Europe/Chisinau" data-tokens="Europe/Chisinau (UTC+03:00)">Europe/Chisinau
+                        (UTC+03:00)</option>
+                     <option value="Europe/Athens" data-tokens="Europe/Athens (UTC+03:00)">Europe/Athens (UTC+03:00)
+                     </option>
+                     <option value="Europe/Uzhgorod" data-tokens="Europe/Uzhgorod (UTC+03:00)">Europe/Uzhgorod
+                        (UTC+03:00)</option>
+                     <option value="Europe/Helsinki" data-tokens="Europe/Helsinki (UTC+03:00)">Europe/Helsinki
+                        (UTC+03:00)</option>
+                     <option value="Europe/Vilnius" data-tokens="Europe/Vilnius (UTC+03:00)">Europe/Vilnius (UTC+03:00)
+                     </option>
+                     <option value="Africa/Addis_Ababa" data-tokens="Africa/Addis_Ababa (UTC+03:00)">Africa/Addis_Ababa
+                        (UTC+03:00)</option>
+                     <option value="Africa/Asmara" data-tokens="Africa/Asmara (UTC+03:00)">Africa/Asmara (UTC+03:00)
+                     </option>
+                     <option value="Indian/Mayotte" data-tokens="Indian/Mayotte (UTC+03:00)">Indian/Mayotte (UTC+03:00)
+                     </option>
+                     <option value="Indian/Comoro" data-tokens="Indian/Comoro (UTC+03:00)">Indian/Comoro (UTC+03:00)
+                     </option>
+                     <option value="Indian/Antananarivo" data-tokens="Indian/Antananarivo (UTC+03:00)">
+                        Indian/Antananarivo (UTC+03:00)</option>
+                     <option value="Europe/Zaporozhye" data-tokens="Europe/Zaporozhye (UTC+03:00)">Europe/Zaporozhye
+                        (UTC+03:00)</option>
+                     <option value="Europe/Volgograd" data-tokens="Europe/Volgograd (UTC+03:00)">Europe/Volgograd
+                        (UTC+03:00)</option>
+                     <option value="Europe/Tallinn" data-tokens="Europe/Tallinn (UTC+03:00)">Europe/Tallinn (UTC+03:00)
+                     </option>
+                     <option value="Europe/Istanbul" data-tokens="Europe/Istanbul (UTC+03:00)">Europe/Istanbul
+                        (UTC+03:00)</option>
+                     <option value="Europe/Sofia" data-tokens="Europe/Sofia (UTC+03:00)">Europe/Sofia (UTC+03:00)
+                     </option>
+                     <option value="Europe/Simferopol" data-tokens="Europe/Simferopol (UTC+03:00)">Europe/Simferopol
+                        (UTC+03:00)</option>
+                     <option value="Europe/Riga" data-tokens="Europe/Riga (UTC+03:00)">Europe/Riga (UTC+03:00)</option>
+                     <option value="Europe/Moscow" data-tokens="Europe/Moscow (UTC+03:00)">Europe/Moscow (UTC+03:00)
+                     </option>
+                     <option value="Europe/Minsk" data-tokens="Europe/Minsk (UTC+03:00)">Europe/Minsk (UTC+03:00)
+                     </option>
+                     <option value="Europe/Mariehamn" data-tokens="Europe/Mariehamn (UTC+03:00)">Europe/Mariehamn
+                        (UTC+03:00)</option>
+                     <option value="Europe/Kirov" data-tokens="Europe/Kirov (UTC+03:00)">Europe/Kirov (UTC+03:00)
+                     </option>
+                     <option value="Europe/Kiev" data-tokens="Europe/Kiev (UTC+03:00)">Europe/Kiev (UTC+03:00)</option>
+                     <option value="Africa/Djibouti" data-tokens="Africa/Djibouti (UTC+03:00)">Africa/Djibouti
+                        (UTC+03:00)</option>
+                     <option value="Africa/Dar_es_Salaam" data-tokens="Africa/Dar_es_Salaam (UTC+03:00)">
+                        Africa/Dar_es_Salaam (UTC+03:00)</option>
+                     <option value="Asia/Qatar" data-tokens="Asia/Qatar (UTC+03:00)">Asia/Qatar (UTC+03:00)</option>
+                     <option value="Asia/Amman" data-tokens="Asia/Amman (UTC+03:00)">Asia/Amman (UTC+03:00)</option>
+                     <option value="Asia/Riyadh" data-tokens="Asia/Riyadh (UTC+03:00)">Asia/Riyadh (UTC+03:00)</option>
+                     <option value="Asia/Beirut" data-tokens="Asia/Beirut (UTC+03:00)">Asia/Beirut (UTC+03:00)</option>
+                     <option value="Asia/Gaza" data-tokens="Asia/Gaza (UTC+03:00)">Asia/Gaza (UTC+03:00)</option>
+                     <option value="Asia/Bahrain" data-tokens="Asia/Bahrain (UTC+03:00)">Asia/Bahrain (UTC+03:00)
+                     </option>
+                     <option value="Asia/Hebron" data-tokens="Asia/Hebron (UTC+03:00)">Asia/Hebron (UTC+03:00)</option>
+                     <option value="Asia/Jerusalem" data-tokens="Asia/Jerusalem (UTC+03:00)">Asia/Jerusalem (UTC+03:00)
+                     </option>
+                     <option value="Asia/Baghdad" data-tokens="Asia/Baghdad (UTC+03:00)">Asia/Baghdad (UTC+03:00)
+                     </option>
+                     <option value="Asia/Kuwait" data-tokens="Asia/Kuwait (UTC+03:00)">Asia/Kuwait (UTC+03:00)</option>
+                     <option value="Asia/Famagusta" data-tokens="Asia/Famagusta (UTC+03:00)">Asia/Famagusta (UTC+03:00)
+                     </option>
+                     <option value="Asia/Aden" data-tokens="Asia/Aden (UTC+03:00)">Asia/Aden (UTC+03:00)</option>
+                     <option value="Asia/Nicosia" data-tokens="Asia/Nicosia (UTC+03:00)">Asia/Nicosia (UTC+03:00)
+                     </option>
+                     <option value="Antarctica/Syowa" data-tokens="Antarctica/Syowa (UTC+03:00)">Antarctica/Syowa
+                        (UTC+03:00)</option>
+                     <option value="Africa/Kampala" data-tokens="Africa/Kampala (UTC+03:00)">Africa/Kampala (UTC+03:00)
+                     </option>
+                     <option value="Africa/Mogadishu" data-tokens="Africa/Mogadishu (UTC+03:00)">Africa/Mogadishu
+                        (UTC+03:00)</option>
+                     <option value="Africa/Nairobi" data-tokens="Africa/Nairobi (UTC+03:00)">Africa/Nairobi (UTC+03:00)
+                     </option>
+                     <option value="Asia/Damascus" data-tokens="Asia/Damascus (UTC+03:00)">Asia/Damascus (UTC+03:00)
+                     </option>
+                     <option value="Asia/Muscat" data-tokens="Asia/Muscat (UTC+04:00)">Asia/Muscat (UTC+04:00)</option>
+                     <option value="Asia/Dubai" data-tokens="Asia/Dubai (UTC+04:00)">Asia/Dubai (UTC+04:00)</option>
+                     <option value="Europe/Samara" data-tokens="Europe/Samara (UTC+04:00)">Europe/Samara (UTC+04:00)
+                     </option>
+                     <option value="Europe/Saratov" data-tokens="Europe/Saratov (UTC+04:00)">Europe/Saratov (UTC+04:00)
+                     </option>
+                     <option value="Europe/Ulyanovsk" data-tokens="Europe/Ulyanovsk (UTC+04:00)">Europe/Ulyanovsk
+                        (UTC+04:00)</option>
+                     <option value="Europe/Astrakhan" data-tokens="Europe/Astrakhan (UTC+04:00)">Europe/Astrakhan
+                        (UTC+04:00)</option>
+                     <option value="Asia/Tbilisi" data-tokens="Asia/Tbilisi (UTC+04:00)">Asia/Tbilisi (UTC+04:00)
+                     </option>
+                     <option value="Asia/Yerevan" data-tokens="Asia/Yerevan (UTC+04:00)">Asia/Yerevan (UTC+04:00)
+                     </option>
+                     <option value="Indian/Mahe" data-tokens="Indian/Mahe (UTC+04:00)">Indian/Mahe (UTC+04:00)</option>
+                     <option value="Indian/Mauritius" data-tokens="Indian/Mauritius (UTC+04:00)">Indian/Mauritius
+                        (UTC+04:00)</option>
+                     <option value="Indian/Reunion" data-tokens="Indian/Reunion (UTC+04:00)">Indian/Reunion (UTC+04:00)
+                     </option>
+                     <option value="Asia/Baku" data-tokens="Asia/Baku (UTC+04:00)">Asia/Baku (UTC+04:00)</option>
+                     <option value="Asia/Kabul" data-tokens="Asia/Kabul (UTC+04:30)">Asia/Kabul (UTC+04:30)</option>
+                     <option value="Asia/Tehran" data-tokens="Asia/Tehran (UTC+04:30)">Asia/Tehran (UTC+04:30)</option>
+                     <option value="Asia/Tashkent" data-tokens="Asia/Tashkent (UTC+05:00)">Asia/Tashkent (UTC+05:00)
+                     </option>
+                     <option value="Asia/Aqtau" data-tokens="Asia/Aqtau (UTC+05:00)">Asia/Aqtau (UTC+05:00)</option>
+                     <option value="Asia/Karachi" data-tokens="Asia/Karachi (UTC+05:00)">Asia/Karachi (UTC+05:00)
+                     </option>
+                     <option value="Asia/Dushanbe" data-tokens="Asia/Dushanbe (UTC+05:00)">Asia/Dushanbe (UTC+05:00)
+                     </option>
+                     <option value="Asia/Samarkand" data-tokens="Asia/Samarkand (UTC+05:00)">Asia/Samarkand (UTC+05:00)
+                     </option>
+                     <option value="Asia/Yekaterinburg" data-tokens="Asia/Yekaterinburg (UTC+05:00)">Asia/Yekaterinburg
+                        (UTC+05:00)</option>
+                     <option value="Asia/Atyrau" data-tokens="Asia/Atyrau (UTC+05:00)">Asia/Atyrau (UTC+05:00)</option>
+                     <option value="Asia/Ashgabat" data-tokens="Asia/Ashgabat (UTC+05:00)">Asia/Ashgabat (UTC+05:00)
+                     </option>
+                     <option value="Asia/Aqtobe" data-tokens="Asia/Aqtobe (UTC+05:00)">Asia/Aqtobe (UTC+05:00)</option>
+                     <option value="Asia/Oral" data-tokens="Asia/Oral (UTC+05:00)">Asia/Oral (UTC+05:00)</option>
+                     <option value="Indian/Kerguelen" data-tokens="Indian/Kerguelen (UTC+05:00)">Indian/Kerguelen
+                        (UTC+05:00)</option>
+                     <option value="Indian/Maldives" data-tokens="Indian/Maldives (UTC+05:00)">Indian/Maldives
+                        (UTC+05:00)</option>
+                     <option value="Antarctica/Mawson" data-tokens="Antarctica/Mawson (UTC+05:00)">Antarctica/Mawson
+                        (UTC+05:00)</option>
+                     <option value="Asia/Qyzylorda" data-tokens="Asia/Qyzylorda (UTC+05:00)">Asia/Qyzylorda (UTC+05:00)
+                     </option>
+                     <option value="Asia/Kolkata" data-tokens="Asia/Kolkata (UTC+05:30)" selected>Asia/Kolkata
+                        (UTC+05:30)</option>
+                     <option value="Asia/Colombo" data-tokens="Asia/Colombo (UTC+05:30)">Asia/Colombo (UTC+05:30)
+                     </option>
+                     <option value="Asia/Kathmandu" data-tokens="Asia/Kathmandu (UTC+05:45)">Asia/Kathmandu (UTC+05:45)
+                     </option>
+                     <option value="Indian/Chagos" data-tokens="Indian/Chagos (UTC+06:00)">Indian/Chagos (UTC+06:00)
+                     </option>
+                     <option value="Antarctica/Vostok" data-tokens="Antarctica/Vostok (UTC+06:00)">Antarctica/Vostok
+                        (UTC+06:00)</option>
+                     <option value="Asia/Bishkek" data-tokens="Asia/Bishkek (UTC+06:00)">Asia/Bishkek (UTC+06:00)
+                     </option>
+                     <option value="Asia/Dhaka" data-tokens="Asia/Dhaka (UTC+06:00)">Asia/Dhaka (UTC+06:00)</option>
+                     <option value="Asia/Urumqi" data-tokens="Asia/Urumqi (UTC+06:00)">Asia/Urumqi (UTC+06:00)</option>
+                     <option value="Asia/Thimphu" data-tokens="Asia/Thimphu (UTC+06:00)">Asia/Thimphu (UTC+06:00)
+                     </option>
+                     <option value="Asia/Almaty" data-tokens="Asia/Almaty (UTC+06:00)">Asia/Almaty (UTC+06:00)</option>
+                     <option value="Asia/Qostanay" data-tokens="Asia/Qostanay (UTC+06:00)">Asia/Qostanay (UTC+06:00)
+                     </option>
+                     <option value="Asia/Omsk" data-tokens="Asia/Omsk (UTC+06:00)">Asia/Omsk (UTC+06:00)</option>
+                     <option value="Asia/Yangon" data-tokens="Asia/Yangon (UTC+06:30)">Asia/Yangon (UTC+06:30)</option>
+                     <option value="Indian/Cocos" data-tokens="Indian/Cocos (UTC+06:30)">Indian/Cocos (UTC+06:30)
+                     </option>
+                     <option value="Asia/Novokuznetsk" data-tokens="Asia/Novokuznetsk (UTC+07:00)">Asia/Novokuznetsk
+                        (UTC+07:00)</option>
+                     <option value="Asia/Pontianak" data-tokens="Asia/Pontianak (UTC+07:00)">Asia/Pontianak (UTC+07:00)
+                     </option>
+                     <option value="Asia/Krasnoyarsk" data-tokens="Asia/Krasnoyarsk (UTC+07:00)">Asia/Krasnoyarsk
+                        (UTC+07:00)</option>
+                     <option value="Asia/Novosibirsk" data-tokens="Asia/Novosibirsk (UTC+07:00)">Asia/Novosibirsk
+                        (UTC+07:00)</option>
+                     <option value="Asia/Vientiane" data-tokens="Asia/Vientiane (UTC+07:00)">Asia/Vientiane (UTC+07:00)
+                     </option>
+                     <option value="Antarctica/Davis" data-tokens="Antarctica/Davis (UTC+07:00)">Antarctica/Davis
+                        (UTC+07:00)</option>
+                     <option value="Asia/Ho_Chi_Minh" data-tokens="Asia/Ho_Chi_Minh (UTC+07:00)">Asia/Ho_Chi_Minh
+                        (UTC+07:00)</option>
+                     <option value="Asia/Barnaul" data-tokens="Asia/Barnaul (UTC+07:00)">Asia/Barnaul (UTC+07:00)
+                     </option>
+                     <option value="Asia/Hovd" data-tokens="Asia/Hovd (UTC+07:00)">Asia/Hovd (UTC+07:00)</option>
+                     <option value="Asia/Bangkok" data-tokens="Asia/Bangkok (UTC+07:00)">Asia/Bangkok (UTC+07:00)
+                     </option>
+                     <option value="Asia/Jakarta" data-tokens="Asia/Jakarta (UTC+07:00)">Asia/Jakarta (UTC+07:00)
+                     </option>
+                     <option value="Indian/Christmas" data-tokens="Indian/Christmas (UTC+07:00)">Indian/Christmas
+                        (UTC+07:00)</option>
+                     <option value="Asia/Tomsk" data-tokens="Asia/Tomsk (UTC+07:00)">Asia/Tomsk (UTC+07:00)</option>
+                     <option value="Asia/Phnom_Penh" data-tokens="Asia/Phnom_Penh (UTC+07:00)">Asia/Phnom_Penh
+                        (UTC+07:00)</option>
+                     <option value="Asia/Taipei" data-tokens="Asia/Taipei (UTC+08:00)">Asia/Taipei (UTC+08:00)</option>
+                     <option value="Asia/Singapore" data-tokens="Asia/Singapore (UTC+08:00)">Asia/Singapore (UTC+08:00)
+                     </option>
+                     <option value="Asia/Manila" data-tokens="Asia/Manila (UTC+08:00)">Asia/Manila (UTC+08:00)</option>
+                     <option value="Asia/Brunei" data-tokens="Asia/Brunei (UTC+08:00)">Asia/Brunei (UTC+08:00)</option>
+                     <option value="Australia/Perth" data-tokens="Australia/Perth (UTC+08:00)">Australia/Perth
+                        (UTC+08:00)</option>
+                     <option value="Asia/Choibalsan" data-tokens="Asia/Choibalsan (UTC+08:00)">Asia/Choibalsan
+                        (UTC+08:00)</option>
+                     <option value="Asia/Makassar" data-tokens="Asia/Makassar (UTC+08:00)">Asia/Makassar (UTC+08:00)
+                     </option>
+                     <option value="Asia/Shanghai" data-tokens="Asia/Shanghai (UTC+08:00)">Asia/Shanghai (UTC+08:00)
+                     </option>
+                     <option value="Asia/Macau" data-tokens="Asia/Macau (UTC+08:00)">Asia/Macau (UTC+08:00)</option>
+                     <option value="Asia/Kuching" data-tokens="Asia/Kuching (UTC+08:00)">Asia/Kuching (UTC+08:00)
+                     </option>
+                     <option value="Asia/Hong_Kong" data-tokens="Asia/Hong_Kong (UTC+08:00)">Asia/Hong_Kong (UTC+08:00)
+                     </option>
+                     <option value="Asia/Irkutsk" data-tokens="Asia/Irkutsk (UTC+08:00)">Asia/Irkutsk (UTC+08:00)
+                     </option>
+                     <option value="Asia/Ulaanbaatar" data-tokens="Asia/Ulaanbaatar (UTC+08:00)">Asia/Ulaanbaatar
+                        (UTC+08:00)</option>
+                     <option value="Asia/Kuala_Lumpur" data-tokens="Asia/Kuala_Lumpur (UTC+08:00)">Asia/Kuala_Lumpur
+                        (UTC+08:00)</option>
+                     <option value="Australia/Eucla" data-tokens="Australia/Eucla (UTC+08:45)">Australia/Eucla
+                        (UTC+08:45)</option>
+                     <option value="Pacific/Palau" data-tokens="Pacific/Palau (UTC+09:00)">Pacific/Palau (UTC+09:00)
+                     </option>
+                     <option value="Asia/Tokyo" data-tokens="Asia/Tokyo (UTC+09:00)">Asia/Tokyo (UTC+09:00)</option>
+                     <option value="Asia/Pyongyang" data-tokens="Asia/Pyongyang (UTC+09:00)">Asia/Pyongyang (UTC+09:00)
+                     </option>
+                     <option value="Asia/Khandyga" data-tokens="Asia/Khandyga (UTC+09:00)">Asia/Khandyga (UTC+09:00)
+                     </option>
+                     <option value="Asia/Yakutsk" data-tokens="Asia/Yakutsk (UTC+09:00)">Asia/Yakutsk (UTC+09:00)
+                     </option>
+                     <option value="Asia/Chita" data-tokens="Asia/Chita (UTC+09:00)">Asia/Chita (UTC+09:00)</option>
+                     <option value="Asia/Seoul" data-tokens="Asia/Seoul (UTC+09:00)">Asia/Seoul (UTC+09:00)</option>
+                     <option value="Asia/Dili" data-tokens="Asia/Dili (UTC+09:00)">Asia/Dili (UTC+09:00)</option>
+                     <option value="Asia/Jayapura" data-tokens="Asia/Jayapura (UTC+09:00)">Asia/Jayapura (UTC+09:00)
+                     </option>
+                     <option value="Australia/Darwin" data-tokens="Australia/Darwin (UTC+09:30)">Australia/Darwin
+                        (UTC+09:30)</option>
+                     <option value="Australia/Broken_Hill" data-tokens="Australia/Broken_Hill (UTC+09:30)">
+                        Australia/Broken_Hill (UTC+09:30)</option>
+                     <option value="Australia/Adelaide" data-tokens="Australia/Adelaide (UTC+09:30)">Australia/Adelaide
+                        (UTC+09:30)</option>
+                     <option value="Australia/Melbourne" data-tokens="Australia/Melbourne (UTC+10:00)">
+                        Australia/Melbourne (UTC+10:00)</option>
+                     <option value="Pacific/Saipan" data-tokens="Pacific/Saipan (UTC+10:00)">Pacific/Saipan (UTC+10:00)
+                     </option>
+                     <option value="Pacific/Port_Moresby" data-tokens="Pacific/Port_Moresby (UTC+10:00)">
+                        Pacific/Port_Moresby (UTC+10:00)</option>
+                     <option value="Australia/Brisbane" data-tokens="Australia/Brisbane (UTC+10:00)">Australia/Brisbane
+                        (UTC+10:00)</option>
+                     <option value="Antarctica/DumontDUrville" data-tokens="Antarctica/DumontDUrville (UTC+10:00)">
+                        Antarctica/DumontDUrville (UTC+10:00)</option>
+                     <option value="Antarctica/Macquarie" data-tokens="Antarctica/Macquarie (UTC+10:00)">
+                        Antarctica/Macquarie (UTC+10:00)</option>
+                     <option value="Pacific/Guam" data-tokens="Pacific/Guam (UTC+10:00)">Pacific/Guam (UTC+10:00)
+                     </option>
+                     <option value="Australia/Lindeman" data-tokens="Australia/Lindeman (UTC+10:00)">Australia/Lindeman
+                        (UTC+10:00)</option>
+                     <option value="Pacific/Chuuk" data-tokens="Pacific/Chuuk (UTC+10:00)">Pacific/Chuuk (UTC+10:00)
+                     </option>
+                     <option value="Asia/Vladivostok" data-tokens="Asia/Vladivostok (UTC+10:00)">Asia/Vladivostok
+                        (UTC+10:00)</option>
+                     <option value="Australia/Hobart" data-tokens="Australia/Hobart (UTC+10:00)">Australia/Hobart
+                        (UTC+10:00)</option>
+                     <option value="Australia/Sydney" data-tokens="Australia/Sydney (UTC+10:00)">Australia/Sydney
+                        (UTC+10:00)</option>
+                     <option value="Asia/Ust-Nera" data-tokens="Asia/Ust-Nera (UTC+10:00)">Asia/Ust-Nera (UTC+10:00)
+                     </option>
+                     <option value="Australia/Lord_Howe" data-tokens="Australia/Lord_Howe (UTC+10:30)">
+                        Australia/Lord_Howe (UTC+10:30)</option>
+                     <option value="Pacific/Guadalcanal" data-tokens="Pacific/Guadalcanal (UTC+11:00)">
+                        Pacific/Guadalcanal (UTC+11:00)</option>
+                     <option value="Pacific/Efate" data-tokens="Pacific/Efate (UTC+11:00)">Pacific/Efate (UTC+11:00)
+                     </option>
+                     <option value="Asia/Srednekolymsk" data-tokens="Asia/Srednekolymsk (UTC+11:00)">Asia/Srednekolymsk
+                        (UTC+11:00)</option>
+                     <option value="Pacific/Pohnpei" data-tokens="Pacific/Pohnpei (UTC+11:00)">Pacific/Pohnpei
+                        (UTC+11:00)</option>
+                     <option value="Asia/Magadan" data-tokens="Asia/Magadan (UTC+11:00)">Asia/Magadan (UTC+11:00)
+                     </option>
+                     <option value="Antarctica/Casey" data-tokens="Antarctica/Casey (UTC+11:00)">Antarctica/Casey
+                        (UTC+11:00)</option>
+                     <option value="Pacific/Noumea" data-tokens="Pacific/Noumea (UTC+11:00)">Pacific/Noumea (UTC+11:00)
+                     </option>
+                     <option value="Asia/Sakhalin" data-tokens="Asia/Sakhalin (UTC+11:00)">Asia/Sakhalin (UTC+11:00)
+                     </option>
+                     <option value="Pacific/Norfolk" data-tokens="Pacific/Norfolk (UTC+11:00)">Pacific/Norfolk
+                        (UTC+11:00)</option>
+                     <option value="Pacific/Bougainville" data-tokens="Pacific/Bougainville (UTC+11:00)">
+                        Pacific/Bougainville (UTC+11:00)</option>
+                     <option value="Pacific/Kosrae" data-tokens="Pacific/Kosrae (UTC+11:00)">Pacific/Kosrae (UTC+11:00)
+                     </option>
+                     <option value="Pacific/Majuro" data-tokens="Pacific/Majuro (UTC+12:00)">Pacific/Majuro (UTC+12:00)
+                     </option>
+                     <option value="Pacific/Wallis" data-tokens="Pacific/Wallis (UTC+12:00)">Pacific/Wallis (UTC+12:00)
+                     </option>
+                     <option value="Pacific/Wake" data-tokens="Pacific/Wake (UTC+12:00)">Pacific/Wake (UTC+12:00)
+                     </option>
+                     <option value="Pacific/Tarawa" data-tokens="Pacific/Tarawa (UTC+12:00)">Pacific/Tarawa (UTC+12:00)
+                     </option>
+                     <option value="Asia/Kamchatka" data-tokens="Asia/Kamchatka (UTC+12:00)">Asia/Kamchatka (UTC+12:00)
+                     </option>
+                     <option value="Antarctica/McMurdo" data-tokens="Antarctica/McMurdo (UTC+12:00)">Antarctica/McMurdo
+                        (UTC+12:00)</option>
+                     <option value="Asia/Anadyr" data-tokens="Asia/Anadyr (UTC+12:00)">Asia/Anadyr (UTC+12:00)</option>
+                     <option value="Pacific/Funafuti" data-tokens="Pacific/Funafuti (UTC+12:00)">Pacific/Funafuti
+                        (UTC+12:00)</option>
+                     <option value="Pacific/Auckland" data-tokens="Pacific/Auckland (UTC+12:00)">Pacific/Auckland
+                        (UTC+12:00)</option>
+                     <option value="Pacific/Nauru" data-tokens="Pacific/Nauru (UTC+12:00)">Pacific/Nauru (UTC+12:00)
+                     </option>
+                     <option value="Pacific/Kwajalein" data-tokens="Pacific/Kwajalein (UTC+12:00)">Pacific/Kwajalein
+                        (UTC+12:00)</option>
+                     <option value="Pacific/Fiji" data-tokens="Pacific/Fiji (UTC+12:00)">Pacific/Fiji (UTC+12:00)
+                     </option>
+                     <option value="Pacific/Chatham" data-tokens="Pacific/Chatham (UTC+12:45)">Pacific/Chatham
+                        (UTC+12:45)</option>
+                     <option value="Pacific/Fakaofo" data-tokens="Pacific/Fakaofo (UTC+13:00)">Pacific/Fakaofo
+                        (UTC+13:00)</option>
+                     <option value="Pacific/Apia" data-tokens="Pacific/Apia (UTC+13:00)">Pacific/Apia (UTC+13:00)
+                     </option>
+                     <option value="Pacific/Enderbury" data-tokens="Pacific/Enderbury (UTC+13:00)">Pacific/Enderbury
+                        (UTC+13:00)</option>
+                     <option value="Pacific/Tongatapu" data-tokens="Pacific/Tongatapu (UTC+13:00)">Pacific/Tongatapu
+                        (UTC+13:00)</option>
+                     <option value="Pacific/Kiritimati" data-tokens="Pacific/Kiritimati (UTC+14:00)">Pacific/Kiritimati
+                        (UTC+14:00)</option>
+                     <option value="Etc/GMT-11" data-tokens="Etc/GMT-11">Etc/GMT-11</option>
+                     <option value="Etc/GMT-10" data-tokens="Etc/GMT-10">Etc/GMT-10</option>
+                     <option value="Etc/GMT-9" data-tokens="Etc/GMT-9">Etc/GMT-9</option>
+                     <option value="Etc/GMT-8" data-tokens="Etc/GMT-8">Etc/GMT-8</option>
+                     <option value="Etc/GMT-7" data-tokens="Etc/GMT-7">Etc/GMT-7</option>
+                     <option value="Etc/GMT-6" data-tokens="Etc/GMT-6">Etc/GMT-6</option>
+                     <option value="Etc/GMT-5" data-tokens="Etc/GMT-5">Etc/GMT-5</option>
+                     <option value="Etc/GMT-4" data-tokens="Etc/GMT-4">Etc/GMT-4</option>
+                     <option value="Etc/GMT-3" data-tokens="Etc/GMT-3">Etc/GMT-3</option>
+                     <option value="Etc/GMT-2" data-tokens="Etc/GMT-2">Etc/GMT-2</option>
+                     <option value="Etc/GMT-1" data-tokens="Etc/GMT-1">Etc/GMT-1</option>
+                  </select>
+                    </div>
+                </div>
+                <div id="myCalendar" class="vanilla-calendar"></div>
+            </div>
+
+
+
+            <div class="col-lg-2 col-sm-4">
+                <h3 class="ml-4">Slots</h3>
+                <div class=" mt-2 events height" style="margin-right: 0px; overflow-y: scroll;">
+
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/vanilla-calendar-min.js"></script>
+    <script>
+        let myCalendar = new VanillaCalendar({
+            selector: "#myCalendar",
+            pastDates: false
+        });
+    </script>
+
+</body>
+
+</html>
